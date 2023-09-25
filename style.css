@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  max-width: 1280px;
+  max-height: 1649px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.42);
+  position: relative;
+}
+.btn {
+  position: fixed;
+  width: 480px;
+  height: 200px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  left: 30%;
+  top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn__form,
+.btn__table {
+  padding: 10px;
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  background: #f8f7f7;
+  color: #69f17b;
+  font-weight: 700;
+  border: 2px solid rgb(241, 157, 157);
+  margin: 10px;
+}
+
+.btn__table:hover {
+  transform: scale(1.05);
+}
+.btn__form:hover {
+  transform: scale(1.05);
+}
+.wrapper {
+  visibility: hidden;
+  max-width: 754px;
+  min-height: 1248px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0 98px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 53px;
+  position: relative;
+}
+form h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+form input, select {
+  width: 558px;
+  height: 56px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-size: 16px;
+  
+}
+::placeholder {
+  opacity: 1;
+  color: #0C1014;
+}
+.photos {
+  align-self: start;
+}
+label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 80px;
+  left: 395px;
+}
+label img {
+  width: 130px;
+  height: 24px;
+  margin-left: 10px;
+}
+.photo {
+  width: 163px;
+  height: 163px;
+  margin-left: 0;
+  margin-top: 7px;
+  z-index: 0;
+  border-radius: 50%;
+}
+.photo-vector {
+  margin-top: -120px;
+  margin-left: 14px;
+  z-index: 1;
+  cursor: pointer;
+}
+label p {
+  color: #fff;
+  margin-top: 13px;
+  margin-left: -400px;
+  z-index: 1;
+  font-size: 18px;
+  text-decoration: underline;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+.cross {
+  z-index: 2;
+  margin-top: -110px;
+  margin-left: 125px;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+}
+.icon-file {
+  color: transparent;
+  visibility: hidden;
+}
+.icon-organization {
+  background: url(./image/label.svg) no-repeat 3.5% 8px;
+  padding-bottom: 8px;
+}
+.icon-tel {
+  background: url(./image/tel.svg) no-repeat 3.5% 8px;
+  padding-bottom: 8px;
+  z-index: 3;
+}
+.icon-mail {
+  background: url(./image/mail.svg) no-repeat 3.5% 8px;
+  padding-bottom: 8px;
+}
+.select {
+  background: url(./image/direction.svg) no-repeat 3.5% 8px,
+              url(./image/Group.svg) no-repeat 97% center;
+  padding: 0 16px 0px 16px;
+  appearance: none;
+  line-height: 64px;
+}
+
+
+.icon-awc {
+  background: url(./image/global.svg) no-repeat 97% center;
+}
+.icon-vk {
+  background: url(./image/vk.svg) no-repeat 97% center;
+}
+.icon-ok {
+  background: url(./image/odnoklassniki.svg) no-repeat 97% center;
+}
+.icon-fb {
+  background: url(./image/fb.svg) no-repeat 97% center;
+}
+.icon-ig {
+  background: url(./image/Ig.svg) no-repeat 97% center;
+}
+.icon-yb {
+  background: url(./image/youtube.svg) no-repeat 97% center;
+}
+.boss {
+  background: url(./image/boss.svg) no-repeat 3.5% 8px;
+  padding-bottom: 8px;
+}
+.submit {
+  width: 557px;
+  height: 48px;
+  margin-top: 20px;
+  background: #E5266E;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cancel {
+  margin-top: 15px;
+  color: #0848C0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.inp {
+  width: 362px;
+  align-self: start;
+}
+.table-search {
+  position: absolute;
+  top: 10px;
+  visibility: hidden;
+  width: 70%;
+}
+.table-search h3 {
+  color: #fff;
+  font-size: 25px;
+}
+
+table {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.search {
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  font-size: 25px;
+}
+.search-input {
+  position: relative;
+  margin-top: -50px;
+}
+tr, td, th {
+  border: 2px solid #000;
+  padding: 5px;
+}
+th {
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 320px;
+    padding: 10px;
+  }
+  form input, 
+  form .select,
+  form .inp {
+    width: 300px;
+  }
+  label {
+    position: relative;
+    margin-left: -330px;
+    margin-bottom: 100px;
+    top: 0;
+  }
+  label p {
+    margin-left: -160px;
+  }
+  .submit {
+    width: 300px;
+  }
+}

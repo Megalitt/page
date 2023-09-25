@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="btn">
+    <button onclick="openForm()" class="btn__form">Открыть форму</button>
+    <button onclick="openTable()" class="btn__table">Открыть таблицу</button>
+  </div>
+  <div class="wrapper">
+    <form action="">
+      <h2>Стать партнёром проекта</h2>
+      <div class="photos">
+        <label for="">
+          <img src="./image/label_file.svg" alt="">
+          <img class="photo" src="./image/photo.png" alt="" id="image">
+          <img onclick="down()" class="photo-vector" src="./image/Vector.svg" alt="">
+          <p onclick="down()">Выберите<br/> файл</p>
+          <img onclick="remov()" class="cross" src="./image/cross.svg" alt="">
+          <input class="valid icon-file" type="file" name="" id="file" >
+        </label>
+      </div>
+      <input class="valid inp icon-organization" type="text" name="" id="" placeholder="АВЦ">
+      <input class="valid inp icon-tel" type="tel" name="" id="" placeholder="+7 933 848-34-33">
+      <input class="valid inp icon-mail" type="email" name="" id="" placeholder="avc@gmail.com">
+      <select class="select" type="text" name="" id="" >
+        <option value="" selected>Экология</option>
+        <option value="">Бизнес</option>
+        <option value="">Разное</option>
+      </select>
+      <input class="valid icon icon-awc" type="text" name="" id="" placeholder="avc.ru">
+      <input class="valid icon icon-vk" type="text" name="" id="" placeholder="vk.com/shans">
+      <input class="valid icon icon-ok" type="text" name="" id="" placeholder="ok.com/shans">
+      <input class="valid icon icon-fb" type="text" name="" id="" placeholder="facebook.com/shans">
+      <input class="valid icon icon-ig" type="text" name="" id="" placeholder="instagram.com/shans">
+      <input class="valid icon icon-yb" type="text" name="" id="" placeholder="youtube.com/shans">
+      <input class="valid boss" type="text" name="" id="" placeholder="Александров Иван Васильевич">
+      <button onclick="validation()" class="submit" type="submit">Стать партнёром проекта</button>
+      <button onclick="cancelForm()" class="cancel">Отменить</button>
+    </form>
+  </div>
+  <div class="table-search">
+    <h3>Поиск</h3>
+    <input oninput="chengeValue()" class="search" type="text" name="text" id="text">
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sortBody()">body</th>
+        <th onclick="sortId()">id</th>
+        <th onclick="sortTitle()">title</th>
+        <th onclick="sortUserId()">userId</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
